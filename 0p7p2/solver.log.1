@@ -1,0 +1,641 @@
+[[36m03-20 13:16:09[0m][[34mdora.distrib[0m][[32mINFO[0m] - Distributed init: 1/2 (local 1) from env[0m
+[[36m03-20 13:16:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Instantiating solver MusicGenSolver for XP c15a809d[0m
+[[36m03-20 13:16:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - All XP logs are stored in /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d[0m
+[[36m03-20 13:16:09[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split train: /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/audiocraft/egs/instrs_C3_midasheng_JH/train[0m
+[[36m03-20 13:16:12[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split valid: /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/audiocraft/egs/instrs_C3_midasheng_JH/valid[0m
+[[36m03-20 13:16:13[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split evaluate: /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/audiocraft/egs/instrs_C3_midasheng_JH/test[0m
+[[36m03-20 13:16:13[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split generate: /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/audiocraft/egs/instrs_C3_midasheng_JH/test[0m
+[[36m03-20 13:16:14[0m][[34mroot[0m][[32mINFO[0m] - Getting pretrained compression model from HF facebook/encodec_32khz[0m
+[[36m03-20 13:16:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Compression model has 8 codebooks with 2048 cardinality, and a framerate of 50[0m
+[[36m03-20 13:16:15[0m][[34maudiocraft.modules.conditioners[0m][[32mINFO[0m] - T5 will be evaluated with autocast as float32[0m
+[[36m03-20 13:16:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 29a70051481c2a110734b5e8a7cfc6a0290d2256[0m
+[[36m03-20 13:16:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - No EMA on the model.[0m
+[[36m03-20 13:16:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model size: 92.70 M params[0m
+[[36m03-20 13:16:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Base memory usage, with model, grad and optim: 1.48 GB[0m
+[[36m03-20 13:16:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Restoring weights and history.[0m
+[[36m03-20 13:16:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Loading a pretrained model. Ignoring 'load_best' and 'ignore_state_keys' params.[0m
+[[36m03-20 13:16:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Checkpoint source is not the current xp: Load state_dict from best state.[0m
+[[36m03-20 13:16:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - ... Loaded checkpoint does not have FSDP best state. Use regular best state[0m
+[[36m03-20 13:16:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Ignoring keys when loading best [][0m
+[[36m03-20 13:16:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Loading state_dict from best state.[0m
+[[36m03-20 13:16:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - FSDP is used, loading from FSDP best state.[0m
+[[36m03-20 13:16:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Re-initializing best state after using FSDP best state.[0m
+[[36m03-20 13:16:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: e8027660ad50b1bbaa22f2e686ba05d23e6ba49a[0m
+[[36m03-20 13:16:36[0m][[34maudiocraft.modules.codebooks_patterns[0m][[32mINFO[0m] - New pattern, time steps: 150, sequence steps: 154[0m
+[[36m03-20 14:54:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 1 | lr=4.92E-05 | ce=2.218 | ppl=14.668 | grad_norm=6.240E+00 | duration=5884.455[0m
+[[36m03-20 15:05:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 1 | ce=1.952 | ppl=10.222 | duration=668.510[0m
+[[36m03-20 15:05:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.952 (was inf)[0m
+[[36m03-20 15:05:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: c00c9ed029321d65fd5818d53a897e361145d9c1[0m
+[[36m03-20 15:06:29[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-20 16:44:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 2 | lr=5.00E-05 | ce=1.994 | ppl=10.644 | grad_norm=2.594E+00 | duration=5863.236[0m
+[[36m03-20 16:51:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 2 | ce=1.839 | ppl=8.927 | duration=425.769[0m
+[[36m03-20 16:51:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.839 (was 1.952)[0m
+[[36m03-20 16:51:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 1a14d28af9c13ca04ae2ef3f6d410850b1bd1614[0m
+[[36m03-20 16:57:02[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-20 18:34:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 3 | lr=5.00E-05 | ce=1.900 | ppl=9.483 | grad_norm=2.350E+00 | duration=5872.385[0m
+[[36m03-20 18:42:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 3 | ce=1.775 | ppl=8.285 | duration=426.774[0m
+[[36m03-20 18:42:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.775 (was 1.839)[0m
+[[36m03-20 18:42:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: a91ca3c34a8727c66750d4a7842166ed1ac4a55a[0m
+[[36m03-20 18:42:46[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-20 20:20:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 4 | lr=5.00E-05 | ce=1.857 | ppl=9.085 | grad_norm=2.217E+00 | duration=5871.126[0m
+[[36m03-20 20:27:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 4 | ce=1.731 | ppl=7.876 | duration=425.015[0m
+[[36m03-20 20:27:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.731 (was 1.775)[0m
+[[36m03-20 20:27:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: cab8300a9b7e2aacc48a4233175d122b34c85771[0m
+[[36m03-20 20:33:26[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-20 22:11:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 5 | lr=5.00E-05 | ce=1.810 | ppl=8.549 | grad_norm=2.127E+00 | duration=5889.335[0m
+[[36m03-20 22:18:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 5 | ce=1.705 | ppl=7.651 | duration=424.070[0m
+[[36m03-20 22:18:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.705 (was 1.731)[0m
+[[36m03-20 22:18:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: f09e2a229a1b89ca25a7309b611e08bc997128d3[0m
+[[36m03-20 22:24:24[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 00:02:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 6 | lr=5.00E-05 | ce=1.785 | ppl=8.360 | grad_norm=2.070E+00 | duration=5877.107[0m
+[[36m03-21 00:09:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 6 | ce=1.686 | ppl=7.477 | duration=424.360[0m
+[[36m03-21 00:09:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.686 (was 1.705)[0m
+[[36m03-21 00:09:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: dd384ab7628923955e887ccee91f0a536beda425[0m
+[[36m03-21 00:15:10[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 01:53:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 7 | lr=5.00E-05 | ce=1.766 | ppl=8.129 | grad_norm=2.007E+00 | duration=5880.434[0m
+[[36m03-21 02:00:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 7 | ce=1.665 | ppl=7.297 | duration=422.842[0m
+[[36m03-21 02:00:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.665 (was 1.686)[0m
+[[36m03-21 02:00:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 2e184c140a3b41ff8123bd3fb8151e294e0f1a8d[0m
+[[36m03-21 02:05:58[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 03:46:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 8 | lr=5.00E-05 | ce=1.747 | ppl=8.017 | grad_norm=1.972E+00 | duration=6032.184[0m
+[[36m03-21 03:53:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 8 | ce=1.651 | ppl=7.180 | duration=424.410[0m
+[[36m03-21 03:53:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.651 (was 1.665)[0m
+[[36m03-21 03:53:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 47fba6a240975be2f495057bada41ff6615e0216[0m
+[[36m03-21 03:59:19[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 05:42:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 9 | lr=5.00E-05 | ce=1.729 | ppl=7.784 | grad_norm=1.927E+00 | duration=6214.620[0m
+[[36m03-21 05:49:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 9 | ce=1.641 | ppl=7.098 | duration=424.039[0m
+[[36m03-21 05:49:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.641 (was 1.651)[0m
+[[36m03-21 05:50:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 349ee427df2c61f80ca988f8940090a3d8c66b98[0m
+[[36m03-21 05:50:43[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 07:34:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 10 | lr=5.00E-05 | ce=1.710 | ppl=7.623 | grad_norm=1.901E+00 | duration=6213.894[0m
+[[36m03-21 07:41:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 10 | ce=1.632 | ppl=7.022 | duration=423.264[0m
+[[36m03-21 07:41:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.632 (was 1.641)[0m
+[[36m03-21 07:41:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 57f74bb023b76becf2e7b7d4d850cce109e754a0[0m
+[[36m03-21 07:42:10[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 09:25:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 11 | lr=5.00E-05 | ce=1.710 | ppl=7.631 | grad_norm=1.885E+00 | duration=6202.693[0m
+[[36m03-21 09:32:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 11 | ce=1.621 | ppl=6.934 | duration=423.461[0m
+[[36m03-21 09:32:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.621 (was 1.632)[0m
+[[36m03-21 09:32:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: abd568d50b2291519334352d1587ecae5878921c[0m
+[[36m03-21 09:38:20[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 11:21:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 12 | lr=5.00E-05 | ce=1.696 | ppl=7.478 | grad_norm=1.857E+00 | duration=6208.197[0m
+[[36m03-21 11:28:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 12 | ce=1.613 | ppl=6.869 | duration=427.007[0m
+[[36m03-21 11:28:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.613 (was 1.621)[0m
+[[36m03-21 11:28:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 6779c87f25e53b88a793e7dcaeb4a8d3ef343cc6[0m
+[[36m03-21 11:34:40[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 13:17:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 13 | lr=5.00E-05 | ce=1.697 | ppl=7.533 | grad_norm=1.845E+00 | duration=6198.025[0m
+[[36m03-21 13:25:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 13 | ce=1.605 | ppl=6.802 | duration=424.550[0m
+[[36m03-21 13:25:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.605 (was 1.613)[0m
+[[36m03-21 13:25:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 4ff6fce5963ef3408dee1bf53bcb7b5ef45d3c60[0m
+[[36m03-21 13:30:47[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 15:13:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 14 | lr=5.00E-05 | ce=1.682 | ppl=7.404 | grad_norm=1.825E+00 | duration=6185.114[0m
+[[36m03-21 15:20:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 14 | ce=1.599 | ppl=6.751 | duration=423.003[0m
+[[36m03-21 15:20:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.599 (was 1.605)[0m
+[[36m03-21 15:20:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 476b34442673bbeede27f673d4549c8a0b8f84fc[0m
+[[36m03-21 15:26:42[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 17:09:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 15 | lr=5.00E-05 | ce=1.678 | ppl=7.395 | grad_norm=1.811E+00 | duration=6165.181[0m
+[[36m03-21 17:16:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 15 | ce=1.591 | ppl=6.688 | duration=424.378[0m
+[[36m03-21 17:16:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.591 (was 1.599)[0m
+[[36m03-21 17:16:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 1d6018d9fac0e0433138b6ff1972b518e8287827[0m
+[[36m03-21 17:22:17[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 19:05:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 16 | lr=5.00E-05 | ce=1.679 | ppl=7.358 | grad_norm=1.797E+00 | duration=6170.707[0m
+[[36m03-21 19:12:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 16 | ce=1.585 | ppl=6.644 | duration=425.572[0m
+[[36m03-21 19:12:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.585 (was 1.591)[0m
+[[36m03-21 19:12:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: acbcfb0b17f358331cc375053fdd50e1c451ddf5[0m
+[[36m03-21 19:18:00[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 21:00:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 17 | lr=5.00E-05 | ce=1.673 | ppl=7.294 | grad_norm=1.778E+00 | duration=6167.666[0m
+[[36m03-21 21:07:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 17 | ce=1.579 | ppl=6.590 | duration=423.455[0m
+[[36m03-21 21:07:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.579 (was 1.585)[0m
+[[36m03-21 21:07:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 4f0db995d60a95a8b884c354f5832ac57b5b1ce4[0m
+[[36m03-21 21:13:35[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-21 22:56:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 18 | lr=5.00E-05 | ce=1.655 | ppl=7.174 | grad_norm=1.756E+00 | duration=6174.506[0m
+[[36m03-21 23:00:08[0m][[34murllib3.connectionpool[0m][[33mWARNING[0m] - Retrying (Retry(total=237, connect=237, read=240, redirect=240, status=240)) after connection broken by 'NewConnectionError("HTTPSConnection(host='api-clearml.k8s.naint.tech', port=443): Failed to establish a new connection: [Errno 111] Connection refused")': /v2.23/tasks.get_all[0m
+[[36m03-21 23:03:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 18 | ce=1.575 | ppl=6.564 | duration=422.942[0m
+[[36m03-21 23:03:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.575 (was 1.579)[0m
+[[36m03-21 23:03:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 9180786d69861222964a58ce9b96e47a211dea30[0m
+[[36m03-21 23:09:18[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 00:52:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 19 | lr=5.00E-05 | ce=1.654 | ppl=7.096 | grad_norm=1.748E+00 | duration=6179.271[0m
+[[36m03-22 00:59:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 19 | ce=1.571 | ppl=6.531 | duration=424.096[0m
+[[36m03-22 00:59:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.571 (was 1.575)[0m
+[[36m03-22 00:59:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 8d10ed974f8156029d1954a95916d9f22abb2aaf[0m
+[[36m03-22 01:05:06[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 02:47:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 20 | lr=5.00E-05 | ce=1.651 | ppl=7.096 | grad_norm=1.742E+00 | duration=6167.226[0m
+[[36m03-22 02:54:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 20 | ce=1.567 | ppl=6.493 | duration=425.009[0m
+[[36m03-22 02:54:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.567 (was 1.571)[0m
+[[36m03-22 02:55:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: cded377fb837a7a635258a1fa6c5e839817a1994[0m
+[[36m03-22 03:00:44[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 04:43:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 21 | lr=5.00E-05 | ce=1.631 | ppl=6.985 | grad_norm=1.726E+00 | duration=6184.014[0m
+[[36m03-22 04:50:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 21 | ce=1.561 | ppl=6.452 | duration=422.827[0m
+[[36m03-22 04:50:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.561 (was 1.567)[0m
+[[36m03-22 04:50:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 75fa5fc4a3cc1bbb2bf60a8bd9ce9593b8615850[0m
+[[36m03-22 04:56:35[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 06:39:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 22 | lr=5.00E-05 | ce=1.635 | ppl=6.965 | grad_norm=1.706E+00 | duration=6190.192[0m
+[[36m03-22 06:46:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 22 | ce=1.559 | ppl=6.429 | duration=424.118[0m
+[[36m03-22 06:46:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.559 (was 1.561)[0m
+[[36m03-22 06:46:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 4cc6679a0efbf808482269cae270fe8fc79d6bbc[0m
+[[36m03-22 06:52:37[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 08:35:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 23 | lr=5.00E-05 | ce=1.634 | ppl=7.032 | grad_norm=1.701E+00 | duration=6176.399[0m
+[[36m03-22 08:42:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 23 | ce=1.556 | ppl=6.411 | duration=424.575[0m
+[[36m03-22 08:42:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.556 (was 1.559)[0m
+[[36m03-22 08:42:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 23f6d6f4e4f39fd8b9e7289f32cf004d807a13da[0m
+[[36m03-22 08:48:22[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 10:31:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 24 | lr=5.00E-05 | ce=1.631 | ppl=6.932 | grad_norm=1.691E+00 | duration=6176.611[0m
+[[36m03-22 10:38:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 24 | ce=1.550 | ppl=6.364 | duration=422.592[0m
+[[36m03-22 10:38:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.550 (was 1.556)[0m
+[[36m03-22 10:38:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: f899710ebfdb0232cc04f34d946dce8ad1071e6f[0m
+[[36m03-22 10:44:07[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 12:27:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 25 | lr=5.00E-05 | ce=1.625 | ppl=6.935 | grad_norm=1.680E+00 | duration=6189.250[0m
+[[36m03-22 12:34:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 25 | ce=1.548 | ppl=6.346 | duration=422.778[0m
+[[36m03-22 12:34:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.548 (was 1.550)[0m
+[[36m03-22 12:34:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: df555a804c07c3533fab7f76edd6bd3395cc4c17[0m
+[[36m03-22 12:40:03[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 14:23:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 26 | lr=5.00E-05 | ce=1.617 | ppl=6.864 | grad_norm=1.669E+00 | duration=6187.545[0m
+[[36m03-22 14:30:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 26 | ce=1.547 | ppl=6.342 | duration=422.662[0m
+[[36m03-22 14:30:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.547 (was 1.548)[0m
+[[36m03-22 14:30:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: ce21e76b710b4d694be5ab8e07da8eab4849146a[0m
+[[36m03-22 14:36:02[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 16:18:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 27 | lr=5.00E-05 | ce=1.611 | ppl=6.811 | grad_norm=1.663E+00 | duration=6176.279[0m
+[[36m03-22 16:26:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 27 | ce=1.541 | ppl=6.294 | duration=424.217[0m
+[[36m03-22 16:26:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.541 (was 1.547)[0m
+[[36m03-22 16:26:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 2638be1d8aed9693eedb9b472672009685f502ce[0m
+[[36m03-22 16:31:46[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 18:15:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 28 | lr=5.00E-05 | ce=1.612 | ppl=6.837 | grad_norm=1.654E+00 | duration=6196.424[0m
+[[36m03-22 18:22:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 28 | ce=1.540 | ppl=6.284 | duration=422.826[0m
+[[36m03-22 18:22:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.540 (was 1.541)[0m
+[[36m03-22 18:22:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: b341b94825e48cadc59cd209e5aec23ef6ef542c[0m
+[[36m03-22 18:27:49[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 20:10:56[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 29 | lr=5.00E-05 | ce=1.616 | ppl=6.842 | grad_norm=1.647E+00 | duration=6187.279[0m
+[[36m03-22 20:17:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 29 | ce=1.537 | ppl=6.262 | duration=423.201[0m
+[[36m03-22 20:17:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.537 (was 1.540)[0m
+[[36m03-22 20:18:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 288328f68251217fb9eb6ea652faf7cde78cd58f[0m
+[[36m03-22 20:23:43[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 22:07:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 30 | lr=5.00E-05 | ce=1.606 | ppl=6.778 | grad_norm=1.636E+00 | duration=6200.670[0m
+[[36m03-22 22:14:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 30 | ce=1.535 | ppl=6.253 | duration=423.986[0m
+[[36m03-22 22:14:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.535 (was 1.537)[0m
+[[36m03-22 22:14:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 705c585b5461824e8c60d5dd48f68424f7f777ae[0m
+[[36m03-22 22:14:51[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-22 23:58:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 31 | lr=5.00E-05 | ce=1.610 | ppl=6.785 | grad_norm=1.634E+00 | duration=6192.218[0m
+[[36m03-23 00:05:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 31 | ce=1.532 | ppl=6.222 | duration=431.689[0m
+[[36m03-23 00:05:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.532 (was 1.535)[0m
+[[36m03-23 00:05:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: cd59ae38aa2a45cdd505b59fda9b687fae7b402d[0m
+[[36m03-23 00:10:57[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 01:54:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 32 | lr=5.00E-05 | ce=1.600 | ppl=6.707 | grad_norm=1.627E+00 | duration=6202.311[0m
+[[36m03-23 02:01:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 32 | ce=1.530 | ppl=6.215 | duration=424.956[0m
+[[36m03-23 02:01:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.530 (was 1.532)[0m
+[[36m03-23 02:01:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0bfb1a063b9cda9c4efd4c9a894f677ca9af3f5b[0m
+[[36m03-23 02:02:08[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 03:45:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 33 | lr=5.00E-05 | ce=1.597 | ppl=6.658 | grad_norm=1.616E+00 | duration=6203.631[0m
+[[36m03-23 03:52:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 33 | ce=1.528 | ppl=6.195 | duration=424.079[0m
+[[36m03-23 03:52:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.528 (was 1.530)[0m
+[[36m03-23 03:52:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: d028e23e912dbb25c1e2e8617e1db8dd55621416[0m
+[[36m03-23 03:58:20[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 05:40:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 34 | lr=5.00E-05 | ce=1.594 | ppl=6.639 | grad_norm=1.612E+00 | duration=6147.334[0m
+[[36m03-23 05:47:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 34 | ce=1.525 | ppl=6.176 | duration=424.973[0m
+[[36m03-23 05:47:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.525 (was 1.528)[0m
+[[36m03-23 05:47:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: a6c0dcc48af0b15cc2b86c021e63a137ded184e0[0m
+[[36m03-23 05:53:41[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 07:37:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 35 | lr=5.00E-05 | ce=1.602 | ppl=6.710 | grad_norm=1.609E+00 | duration=6202.579[0m
+[[36m03-23 07:44:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 35 | ce=1.523 | ppl=6.160 | duration=424.542[0m
+[[36m03-23 07:44:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.523 (was 1.525)[0m
+[[36m03-23 07:44:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: bf20b7ffec20c31fc95b4157e8b83752cce53127[0m
+[[36m03-23 07:49:52[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 09:33:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 36 | lr=5.00E-05 | ce=1.589 | ppl=6.579 | grad_norm=1.602E+00 | duration=6213.839[0m
+[[36m03-23 09:40:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 36 | ce=1.523 | ppl=6.157 | duration=427.066[0m
+[[36m03-23 09:40:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.523 (was 1.523)[0m
+[[36m03-23 09:40:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 2c14871ca5bdd3d21c56ab43615cf18cb97d2ec8[0m
+[[36m03-23 09:41:16[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 11:24:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 37 | lr=5.00E-05 | ce=1.585 | ppl=6.578 | grad_norm=1.596E+00 | duration=6167.652[0m
+[[36m03-23 11:31:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 37 | ce=1.519 | ppl=6.130 | duration=426.818[0m
+[[36m03-23 11:31:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.519 (was 1.523)[0m
+[[36m03-23 11:31:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 399aaad2e5eb00e0b381226e5b4857734effc335[0m
+[[36m03-23 11:31:55[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 13:15:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 38 | lr=5.00E-05 | ce=1.585 | ppl=6.565 | grad_norm=1.592E+00 | duration=6201.831[0m
+[[36m03-23 13:22:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 38 | ce=1.517 | ppl=6.117 | duration=425.325[0m
+[[36m03-23 13:22:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.517 (was 1.519)[0m
+[[36m03-23 13:22:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 81181d8f738e814eaa6231cf0e0aa9e77d546e0d[0m
+[[36m03-23 13:28:03[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 15:11:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 39 | lr=5.00E-05 | ce=1.588 | ppl=6.570 | grad_norm=1.587E+00 | duration=6206.415[0m
+[[36m03-23 15:18:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 39 | ce=1.516 | ppl=6.106 | duration=422.770[0m
+[[36m03-23 15:18:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.516 (was 1.517)[0m
+[[36m03-23 15:18:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 8ba7358f8189ee72c2a8ea181ed18349892dc8f5[0m
+[[36m03-23 15:24:14[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 17:07:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 40 | lr=5.00E-05 | ce=1.582 | ppl=6.556 | grad_norm=1.584E+00 | duration=6198.207[0m
+[[36m03-23 17:14:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 40 | ce=1.514 | ppl=6.092 | duration=423.096[0m
+[[36m03-23 17:14:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.514 (was 1.516)[0m
+[[36m03-23 17:14:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 30f38b840e08b41914682e4afec2530e1b23274d[0m
+[[36m03-23 17:20:17[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 19:03:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 41 | lr=5.00E-05 | ce=1.584 | ppl=6.591 | grad_norm=1.574E+00 | duration=6206.067[0m
+[[36m03-23 19:10:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 41 | ce=1.512 | ppl=6.077 | duration=424.433[0m
+[[36m03-23 19:10:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.512 (was 1.514)[0m
+[[36m03-23 19:10:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 4e5314b344ee8e1841d0a16fb83000f990efbabe[0m
+[[36m03-23 19:16:32[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 20:59:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 42 | lr=5.00E-05 | ce=1.592 | ppl=6.616 | grad_norm=1.575E+00 | duration=6201.985[0m
+[[36m03-23 21:06:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 42 | ce=1.511 | ppl=6.073 | duration=424.358[0m
+[[36m03-23 21:06:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.511 (was 1.512)[0m
+[[36m03-23 21:07:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: e76c235faae7d97124c39855d37eab239e9ea920[0m
+[[36m03-23 21:12:43[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-23 22:56:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 43 | lr=5.00E-05 | ce=1.577 | ppl=6.531 | grad_norm=1.566E+00 | duration=6205.170[0m
+[[36m03-23 23:03:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 43 | ce=1.508 | ppl=6.045 | duration=426.012[0m
+[[36m03-23 23:03:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.508 (was 1.511)[0m
+[[36m03-23 23:03:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: d17e5ce4eca0c13166588615ec57768abc178e05[0m
+[[36m03-23 23:03:57[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 00:47:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 44 | lr=5.00E-05 | ce=1.570 | ppl=6.442 | grad_norm=1.562E+00 | duration=6210.471[0m
+[[36m03-24 00:54:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 44 | ce=1.508 | ppl=6.053 | duration=425.529[0m
+[[36m03-24 00:54:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: df420bc047115862a64b8c5289017ce4d0346baa[0m
+[[36m03-24 01:00:16[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 02:43:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 45 | lr=5.00E-05 | ce=1.579 | ppl=6.512 | grad_norm=1.561E+00 | duration=6215.416[0m
+[[36m03-24 02:50:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 45 | ce=1.506 | ppl=6.031 | duration=423.874[0m
+[[36m03-24 02:50:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.506 (was 1.508)[0m
+[[36m03-24 02:50:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: efa23a23eaf25a1cd6c93e7d6411021b72834e89[0m
+[[36m03-24 02:56:41[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 04:40:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 46 | lr=5.00E-05 | ce=1.578 | ppl=6.543 | grad_norm=1.554E+00 | duration=6207.990[0m
+[[36m03-24 04:47:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 46 | ce=1.504 | ppl=6.020 | duration=423.682[0m
+[[36m03-24 04:47:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.504 (was 1.506)[0m
+[[36m03-24 04:47:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: ec53c056e6dab3c5bef63570b461941123df52c8[0m
+[[36m03-24 04:52:57[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 06:36:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 47 | lr=5.00E-05 | ce=1.573 | ppl=6.500 | grad_norm=1.551E+00 | duration=6205.615[0m
+[[36m03-24 06:43:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 47 | ce=1.504 | ppl=6.015 | duration=425.437[0m
+[[36m03-24 06:43:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.504 (was 1.504)[0m
+[[36m03-24 06:43:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: bf58dbe589fc707c159ee3b26564922380993d7b[0m
+[[36m03-24 06:44:12[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 08:27:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 48 | lr=5.00E-05 | ce=1.568 | ppl=6.418 | grad_norm=1.547E+00 | duration=6201.802[0m
+[[36m03-24 08:34:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 48 | ce=1.502 | ppl=6.004 | duration=424.734[0m
+[[36m03-24 08:34:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.502 (was 1.504)[0m
+[[36m03-24 08:34:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 53de37ee78c8723a0cdee2514e33443215c27463[0m
+[[36m03-24 08:40:23[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 10:23:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 49 | lr=5.00E-05 | ce=1.569 | ppl=6.450 | grad_norm=1.543E+00 | duration=6211.916[0m
+[[36m03-24 10:31:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 49 | ce=1.501 | ppl=5.993 | duration=424.577[0m
+[[36m03-24 10:31:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.501 (was 1.502)[0m
+[[36m03-24 10:31:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: da6ae685f99c8daf761596c34e167295cc992dc4[0m
+[[36m03-24 10:36:45[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 12:20:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 50 | lr=5.00E-05 | ce=1.568 | ppl=6.446 | grad_norm=1.543E+00 | duration=6211.821[0m
+[[36m03-24 12:27:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 50 | ce=1.499 | ppl=5.982 | duration=425.129[0m
+[[36m03-24 12:27:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.499 (was 1.501)[0m
+[[36m03-24 12:27:25[0m][[34maudiocraft.environment[0m][[33mWARNING[0m] - Reference directory: /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/audiocraft/metric_models[0m
+[[36m03-24 12:27:25[0m][[34mroot[0m][[32mINFO[0m] - Loading HTSAT-base model config.[0m
+[[36m03-24 12:27:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - Computing evaluation metrics on 10 samples[0m
+[[36m03-24 12:33:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mEvaluate Summary | Epoch 50 | text_consistency=0.136 | chroma_cosine=0.370 | duration=363.716[0m
+[[36m03-24 12:33:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Generating samples in /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/samples[0m
+[[36m03-24 12:33:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mGenerate Summary | Epoch 50 | rtf=2.578 | duration=8.369[0m
+[[36m03-24 12:33:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 877e62df130e957418acd9f18989f199a9327850[0m
+[[36m03-24 12:39:09[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint_50.th.1[0m
+[[36m03-24 12:39:50[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 14:22:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 51 | lr=5.00E-05 | ce=1.567 | ppl=6.412 | grad_norm=1.538E+00 | duration=6144.264[0m
+[[36m03-24 14:32:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 51 | ce=1.497 | ppl=5.967 | duration=635.553[0m
+[[36m03-24 14:32:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.497 (was 1.499)[0m
+[[36m03-24 14:32:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: dc49a17aa29a3025632245429925295faff4fa11[0m
+[[36m03-24 14:33:33[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 16:14:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 52 | lr=5.00E-05 | ce=1.561 | ppl=6.433 | grad_norm=1.531E+00 | duration=6070.805[0m
+[[36m03-24 16:21:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 52 | ce=1.496 | ppl=5.959 | duration=435.384[0m
+[[36m03-24 16:21:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.496 (was 1.497)[0m
+[[36m03-24 16:22:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 2bd6575d591d059c9709130467624ebda79104b5[0m
+[[36m03-24 16:27:42[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 18:08:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 53 | lr=5.00E-05 | ce=1.567 | ppl=6.439 | grad_norm=1.533E+00 | duration=6051.553[0m
+[[36m03-24 18:15:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 53 | ce=1.495 | ppl=5.946 | duration=427.858[0m
+[[36m03-24 18:15:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.495 (was 1.496)[0m
+[[36m03-24 18:15:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: bfafc900518fef6a6148217a9844ed8148dee220[0m
+[[36m03-24 18:16:24[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 19:57:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 54 | lr=5.00E-05 | ce=1.558 | ppl=6.362 | grad_norm=1.530E+00 | duration=6062.192[0m
+[[36m03-24 20:04:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 54 | ce=1.494 | ppl=5.947 | duration=426.445[0m
+[[36m03-24 20:04:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.494 (was 1.495)[0m
+[[36m03-24 20:04:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 2da8c58dcfcc6b030c2d01e5f150e03188283331[0m
+[[36m03-24 20:10:15[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 21:53:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 55 | lr=5.00E-05 | ce=1.571 | ppl=6.438 | grad_norm=1.529E+00 | duration=6209.530[0m
+[[36m03-24 22:00:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 55 | ce=1.493 | ppl=5.936 | duration=425.935[0m
+[[36m03-24 22:00:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.493 (was 1.494)[0m
+[[36m03-24 22:00:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 8862360e4566dda5dd29bee7e6f4038daee1c657[0m
+[[36m03-24 22:01:34[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-24 23:45:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 56 | lr=5.00E-05 | ce=1.562 | ppl=6.390 | grad_norm=1.522E+00 | duration=6233.627[0m
+[[36m03-24 23:52:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 56 | ce=1.493 | ppl=5.940 | duration=426.739[0m
+[[36m03-24 23:52:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: dbf7d8a1919204d39bb2f1543cfb5ec24df97197[0m
+[[36m03-24 23:53:22[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 01:37:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 57 | lr=5.00E-05 | ce=1.556 | ppl=6.360 | grad_norm=1.520E+00 | duration=6238.904[0m
+[[36m03-25 01:44:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 57 | ce=1.490 | ppl=5.912 | duration=427.194[0m
+[[36m03-25 01:44:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.490 (was 1.493)[0m
+[[36m03-25 01:44:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 700361cc79cc8eae39f205368a5d8bfabd1d352f[0m
+[[36m03-25 01:50:13[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 03:34:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 58 | lr=5.00E-05 | ce=1.552 | ppl=6.287 | grad_norm=1.520E+00 | duration=6233.429[0m
+[[36m03-25 03:41:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 58 | ce=1.489 | ppl=5.906 | duration=426.792[0m
+[[36m03-25 03:41:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.489 (was 1.490)[0m
+[[36m03-25 03:41:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: e39c7198bc0f56e2c47fa9a885cf9a369f96fe36[0m
+[[36m03-25 03:46:58[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 05:30:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 59 | lr=5.00E-05 | ce=1.552 | ppl=6.294 | grad_norm=1.519E+00 | duration=6224.602[0m
+[[36m03-25 05:37:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 59 | ce=1.488 | ppl=5.898 | duration=427.033[0m
+[[36m03-25 05:37:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.488 (was 1.489)[0m
+[[36m03-25 05:37:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 403821eff3040cf5c3aab988293fb3aaf693d1aa[0m
+[[36m03-25 05:43:34[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 07:27:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 60 | lr=5.00E-05 | ce=1.549 | ppl=6.277 | grad_norm=1.515E+00 | duration=6234.039[0m
+[[36m03-25 07:34:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 60 | ce=1.488 | ppl=5.904 | duration=426.760[0m
+[[36m03-25 07:34:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: e94e418bc019b557d61b388f29fe211678b3e5c6[0m
+[[36m03-25 07:40:23[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 09:24:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 61 | lr=5.00E-05 | ce=1.557 | ppl=6.371 | grad_norm=1.522E+00 | duration=6235.094[0m
+[[36m03-25 09:31:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 61 | ce=1.486 | ppl=5.881 | duration=425.950[0m
+[[36m03-25 09:31:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.486 (was 1.488)[0m
+[[36m03-25 09:31:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 7629e1c792b2e4ef653d3aca9a557fb0689b6aad[0m
+[[36m03-25 09:37:05[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 11:16:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 62 | lr=5.00E-05 | ce=1.553 | ppl=6.335 | grad_norm=1.524E+00 | duration=5992.594[0m
+[[36m03-25 11:24:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 62 | ce=1.485 | ppl=5.875 | duration=441.340[0m
+[[36m03-25 11:24:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.485 (was 1.486)[0m
+[[36m03-25 11:24:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: f988d9578b042957b1f131f808a3da975e77dc1b[0m
+[[36m03-25 11:30:00[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 13:07:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 63 | lr=5.00E-05 | ce=1.558 | ppl=6.367 | grad_norm=1.534E+00 | duration=5826.474[0m
+[[36m03-25 13:14:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 63 | ce=1.485 | ppl=5.879 | duration=438.421[0m
+[[36m03-25 13:14:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 7f5fadb14ec1d9ead411782fd4efd20c5d3d7757[0m
+[[36m03-25 13:20:06[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 14:57:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 64 | lr=5.00E-05 | ce=1.554 | ppl=6.337 | grad_norm=1.535E+00 | duration=5864.206[0m
+[[36m03-25 15:05:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 64 | ce=1.485 | ppl=5.875 | duration=436.388[0m
+[[36m03-25 15:05:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: d2b7481749773c5f942c0fa076d16eb6d60dd76e[0m
+[[36m03-25 15:10:49[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 16:50:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 65 | lr=5.00E-05 | ce=1.553 | ppl=6.326 | grad_norm=1.554E+00 | duration=5961.510[0m
+[[36m03-25 16:57:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 65 | ce=1.483 | ppl=5.863 | duration=425.149[0m
+[[36m03-25 16:57:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.483 (was 1.485)[0m
+[[36m03-25 16:57:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 22881793b20b1d6b8b4fbc0c847f2709cd8e86b6[0m
+[[36m03-25 17:02:59[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 18:47:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 66 | lr=5.00E-05 | ce=1.551 | ppl=6.293 | grad_norm=1.573E+00 | duration=6254.045[0m
+[[36m03-25 18:54:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 66 | ce=1.483 | ppl=5.864 | duration=426.548[0m
+[[36m03-25 18:54:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=1.483 (was 1.483)[0m
+[[36m03-25 18:54:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 807faa67b2ebc449e37a93c549a4585b6a902c2c[0m
+[[36m03-25 19:00:01[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 20:44:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 67 | lr=5.00E-05 | ce=1.566 | ppl=6.434 | grad_norm=1.696E+00 | duration=6245.453[0m
+[[36m03-25 20:51:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 67 | ce=1.493 | ppl=5.933 | duration=424.952[0m
+[[36m03-25 20:51:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: f58647b0b9db214dd6d1dc2242616f22e2713e0e[0m
+[[36m03-25 20:56:53[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-25 22:41:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 68 | lr=5.00E-05 | ce=1.590 | ppl=6.594 | grad_norm=1.861E+00 | duration=6248.131[0m
+[[36m03-25 22:48:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 68 | ce=1.524 | ppl=6.151 | duration=425.256[0m
+[[36m03-25 22:48:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 30b0713601ee50e8284a5c0ccc463371c8d201e8[0m
+[[36m03-25 22:53:50[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 00:37:56[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 69 | lr=5.00E-05 | ce=1.671 | ppl=7.292 | grad_norm=2.670E+00 | duration=6246.432[0m
+[[36m03-26 00:45:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 69 | ce=1.555 | ppl=6.389 | duration=425.929[0m
+[[36m03-26 00:45:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: cf68ebf8598b55ce65983ad227ff7f533c35a4d6[0m
+[[36m03-26 00:50:45[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 02:34:56[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 70 | lr=5.00E-05 | ce=2.056 | ppl=2556.608 | grad_norm=2.161E+02 | duration=6250.579[0m
+[[36m03-26 02:42:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 70 | ce=3.053 | ppl=36.950 | duration=426.155[0m
+[[36m03-26 02:42:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 7c7b873f5a55a66c130d39c04df97e6af1a76bc0[0m
+[[36m03-26 02:47:45[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 04:31:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 71 | lr=5.00E-05 | ce=2.379 | ppl=23.963 | grad_norm=3.369E+02 | duration=6245.999[0m
+[[36m03-26 04:38:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 71 | ce=1.830 | ppl=9.746 | duration=423.865[0m
+[[36m03-26 04:38:56[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 6b9fc206fc4a35fe8996893e696cee7191e1396b[0m
+[[36m03-26 04:44:38[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 06:28:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 72 | lr=5.00E-05 | ce=2.282 | ppl=22.385 | grad_norm=9.509E+02 | duration=6256.507[0m
+[[36m03-26 06:36:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 72 | ce=2.697 | ppl=25.015 | duration=431.971[0m
+[[36m03-26 06:36:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: d82f9d897401882a2a7b85b10f5548aa9079bba2[0m
+[[36m03-26 06:41:50[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 08:26:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 73 | lr=5.00E-05 | ce=3.191 | ppl=311.336 | grad_norm=3.445E+03 | duration=6261.048[0m
+[[36m03-26 08:33:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 73 | ce=2.757 | ppl=27.017 | duration=424.779[0m
+[[36m03-26 08:33:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: feb49fdc5df5fe87aa72eff413580d5600234336[0m
+[[36m03-26 08:33:58[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 10:18:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 74 | lr=5.00E-05 | ce=3.143 | ppl=63.314 | grad_norm=8.200E+03 | duration=6271.220[0m
+[[36m03-26 10:25:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 74 | ce=3.240 | ppl=49.281 | duration=427.846[0m
+[[36m03-26 10:25:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 954fd68d6c69f4c22ca26067f4481543bf117670[0m
+[[36m03-26 10:31:18[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 12:15:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 75 | lr=5.00E-05 | ce=3.046 | ppl=46.189 | grad_norm=7.575E+03 | duration=6254.391[0m
+[[36m03-26 12:22:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 75 | ce=2.958 | ppl=34.047 | duration=425.888[0m
+[[36m03-26 12:22:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 6c9c8e66934c318e520a7203252b3e8a5d156e1e[0m
+[[36m03-26 12:28:20[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 14:12:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 76 | lr=5.00E-05 | ce=3.223 | ppl=209.219 | grad_norm=1.750E+03 | duration=6266.290[0m
+[[36m03-26 14:19:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 76 | ce=2.886 | ppl=30.677 | duration=424.218[0m
+[[36m03-26 14:19:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 497e1e1035de8dd9559605a7e4343a734e01d8e4[0m
+[[36m03-26 14:20:31[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 16:05:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 77 | lr=5.00E-05 | ce=3.017 | ppl=38.374 | grad_norm=4.262E+03 | duration=6287.134[0m
+[[36m03-26 16:12:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 77 | ce=2.860 | ppl=30.819 | duration=423.826[0m
+[[36m03-26 16:12:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: efe5ee80e9c73d4bd2937e7623e2ef0ecfe8fdc5[0m
+[[36m03-26 16:18:05[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 18:02:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 78 | lr=5.00E-05 | ce=3.058 | ppl=43.929 | grad_norm=3.948E+03 | duration=6278.589[0m
+[[36m03-26 18:09:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 78 | ce=2.988 | ppl=36.826 | duration=424.584[0m
+[[36m03-26 18:09:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 03f2c23d3ed584008b138685642ac92619f9711b[0m
+[[36m03-26 18:15:31[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 20:00:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 79 | lr=5.00E-05 | ce=3.073 | ppl=45.973 | grad_norm=1.500E+04 | duration=6274.886[0m
+[[36m03-26 20:07:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 79 | ce=2.925 | ppl=33.633 | duration=424.972[0m
+[[36m03-26 20:07:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 9c2e88091c544770fcd6411b081b4d8ca912c968[0m
+[[36m03-26 20:12:58[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 21:57:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 80 | lr=5.00E-05 | ce=2.901 | ppl=32.601 | grad_norm=6.211E+03 | duration=6282.591[0m
+[[36m03-26 22:04:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 80 | ce=2.885 | ppl=31.020 | duration=425.348[0m
+[[36m03-26 22:04:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 5eba97b0a37abf19a491755d3e0f9191a56dbe59[0m
+[[36m03-26 22:10:30[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-26 23:55:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 81 | lr=5.00E-05 | ce=2.938 | ppl=33.103 | grad_norm=7.059E+03 | duration=6280.211[0m
+[[36m03-27 00:02:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 81 | ce=2.730 | ppl=25.963 | duration=430.056[0m
+[[36m03-27 00:02:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: e6e5f6d390817360586ba818c1637a652d4bbedb[0m
+[[36m03-27 00:08:02[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 01:53:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 82 | lr=5.00E-05 | ce=2.876 | ppl=30.801 | grad_norm=2.215E+04 | duration=6301.879[0m
+[[36m03-27 02:00:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 82 | ce=2.710 | ppl=25.917 | duration=425.051[0m
+[[36m03-27 02:00:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 6560ed44c4e00e1ad52647fd6061c9666c608686[0m
+[[36m03-27 02:05:52[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 03:50:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 83 | lr=5.00E-05 | ce=2.897 | ppl=31.986 | grad_norm=4.816E+04 | duration=6302.425[0m
+[[36m03-27 03:58:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 83 | ce=2.832 | ppl=30.498 | duration=425.869[0m
+[[36m03-27 03:58:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0929e4e9655b9893afba1c4c7ce1d08c8bb8dc78[0m
+[[36m03-27 04:03:43[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 05:48:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 84 | lr=5.00E-05 | ce=2.985 | ppl=35.837 | grad_norm=9.570E+04 | duration=6289.284[0m
+[[36m03-27 05:55:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 84 | ce=2.794 | ppl=28.459 | duration=425.507[0m
+[[36m03-27 05:55:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 210079443dc7a8ea0caaf53602d2b66e6c3a9086[0m
+[[36m03-27 06:01:20[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 07:46:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 85 | lr=5.00E-05 | ce=2.974 | ppl=35.163 | grad_norm=1.589E+05 | duration=6283.153[0m
+[[36m03-27 07:53:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 85 | ce=2.945 | ppl=32.488 | duration=426.823[0m
+[[36m03-27 07:53:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 35c5a458913613a3540fbfb574301de2dc06b730[0m
+[[36m03-27 07:58:53[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 09:43:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 86 | lr=5.00E-05 | ce=3.057 | ppl=167.811 | grad_norm=1.605E+04 | duration=6298.357[0m
+[[36m03-27 09:51:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 86 | ce=2.770 | ppl=27.457 | duration=428.191[0m
+[[36m03-27 09:51:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 8499f43cf3f1c6fc91d707b51f243ef00fdb7b8d[0m
+[[36m03-27 09:51:43[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 11:36:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 87 | lr=5.00E-05 | ce=2.906 | ppl=32.385 | grad_norm=4.683E+03 | duration=6304.202[0m
+[[36m03-27 11:43:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 87 | ce=2.957 | ppl=33.177 | duration=425.074[0m
+[[36m03-27 11:43:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 3164c94a7a71a46346c7d86cc333a59a141a5eeb[0m
+[[36m03-27 11:49:41[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 13:34:56[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 88 | lr=5.00E-05 | ce=2.993 | ppl=36.392 | grad_norm=4.430E+04 | duration=6314.648[0m
+[[36m03-27 13:42:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 88 | ce=2.854 | ppl=29.575 | duration=425.556[0m
+[[36m03-27 13:42:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: dd7758711efd53e67fe6a534e6ec5bd6992442f6[0m
+[[36m03-27 13:47:44[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 15:26:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 89 | lr=5.00E-05 | ce=2.898 | ppl=32.046 | grad_norm=8.684E+04 | duration=5900.534[0m
+[[36m03-27 15:33:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 89 | ce=2.761 | ppl=26.634 | duration=424.640[0m
+[[36m03-27 15:33:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: f02a31e7ac43aed3b18478c43f46fb1685f46115[0m
+[[36m03-27 15:38:52[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 17:17:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 90 | lr=5.00E-05 | ce=2.933 | ppl=33.261 | grad_norm=7.010E+04 | duration=5906.412[0m
+[[36m03-27 17:24:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 90 | ce=2.736 | ppl=26.310 | duration=426.497[0m
+[[36m03-27 17:24:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 8d7592a323f8ec9989c27f3f3f0f918eced01139[0m
+[[36m03-27 17:25:08[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 19:03:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 91 | lr=5.00E-05 | ce=2.978 | ppl=35.630 | grad_norm=1.639E+05 | duration=5891.560[0m
+[[36m03-27 19:10:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 91 | ce=2.815 | ppl=29.062 | duration=424.885[0m
+[[36m03-27 19:10:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: b7488168506e5cf2eb223b416579715316b29784[0m
+[[36m03-27 19:16:11[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 20:54:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 92 | lr=5.00E-05 | ce=3.003 | ppl=36.083 | grad_norm=2.333E+05 | duration=5885.907[0m
+[[36m03-27 21:01:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 92 | ce=2.768 | ppl=27.454 | duration=425.054[0m
+[[36m03-27 21:01:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 34b6acf4338c1727d94a6e5a31850b1b3a9dc42c[0m
+[[36m03-27 21:07:06[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-27 22:45:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 93 | lr=5.00E-05 | ce=2.924 | ppl=34.617 | grad_norm=1.315E+05 | duration=5906.387[0m
+[[36m03-27 22:52:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 93 | ce=2.750 | ppl=26.635 | duration=427.128[0m
+[[36m03-27 22:52:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 53c21bc6aa729a15f1edb04a3d56666d4953c086[0m
+[[36m03-27 22:58:22[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 00:36:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 94 | lr=5.00E-05 | ce=2.980 | ppl=34.699 | grad_norm=3.107E+05 | duration=5907.827[0m
+[[36m03-28 00:43:57[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 94 | ce=2.791 | ppl=27.978 | duration=426.987[0m
+[[36m03-28 00:43:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: b6b9b4a9d9fafb6b2f653aab605818c467a46627[0m
+[[36m03-28 00:49:39[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 02:28:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 95 | lr=5.00E-05 | ce=3.007 | ppl=36.117 | grad_norm=1.049E+05 | duration=5913.703[0m
+[[36m03-28 02:35:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 95 | ce=2.950 | ppl=35.318 | duration=429.284[0m
+[[36m03-28 02:35:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: d5fedcaa8b00666e2832116d8a2f151a743d3a7c[0m
+[[36m03-28 02:41:03[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 04:24:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 96 | lr=5.00E-05 | ce=3.030 | ppl=37.196 | grad_norm=1.892E+05 | duration=6186.730[0m
+[[36m03-28 04:31:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 96 | ce=2.901 | ppl=32.192 | duration=427.320[0m
+[[36m03-28 04:31:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: f82f41ad422e1987a05605921a8d2b657623801b[0m
+[[36m03-28 04:36:59[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 06:21:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 97 | lr=5.00E-05 | ce=3.073 | ppl=40.049 | grad_norm=3.207E+05 | duration=6265.161[0m
+[[36m03-28 06:28:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 97 | ce=2.896 | ppl=31.800 | duration=427.067[0m
+[[36m03-28 06:28:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: a024df882770a3184cefcd6ee07d9801ad25d7a5[0m
+[[36m03-28 06:34:15[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 08:18:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 98 | lr=5.00E-05 | ce=3.017 | ppl=37.438 | grad_norm=1.922E+05 | duration=6244.884[0m
+[[36m03-28 08:25:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 98 | ce=2.794 | ppl=28.215 | duration=426.262[0m
+[[36m03-28 08:25:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: cc8eaafd9a8af2265553a91f8d42b4e592e5bc2d[0m
+[[36m03-28 08:31:10[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 10:15:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 99 | lr=5.00E-05 | ce=3.017 | ppl=37.279 | grad_norm=3.152E+05 | duration=6244.185[0m
+[[36m03-28 10:22:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 99 | ce=2.863 | ppl=31.500 | duration=425.518[0m
+[[36m03-28 10:22:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 907f6c7544abc49ecc0a5aecc3e1567925bcdbfb[0m
+[[36m03-28 10:28:03[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 12:11:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 100 | lr=5.00E-05 | ce=3.002 | ppl=39.374 | grad_norm=7.155E+05 | duration=6226.089[0m
+[[36m03-28 12:18:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 100 | ce=2.826 | ppl=29.076 | duration=424.140[0m
+[[36m03-28 12:18:54[0m][[34maudiocraft.environment[0m][[33mWARNING[0m] - Reference directory: /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/audiocraft/metric_models[0m
+[[36m03-28 12:18:55[0m][[34mroot[0m][[32mINFO[0m] - Loading HTSAT-base model config.[0m
+[[36m03-28 12:19:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Computing evaluation metrics on 10 samples[0m
+[[36m03-28 12:19:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mEvaluate Summary | Epoch 100 | text_consistency=0.178 | chroma_cosine=0.484 | duration=41.206[0m
+[[36m03-28 12:19:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Generating samples in /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/samples[0m
+[[36m03-28 12:19:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mGenerate Summary | Epoch 100 | rtf=2.593 | duration=8.110[0m
+[[36m03-28 12:19:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: ebae14993a782cf0890255401541eeb383ef8bea[0m
+[[36m03-28 12:25:26[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint_100.th.1[0m
+[[36m03-28 12:26:08[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 14:10:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 101 | lr=5.00E-05 | ce=2.883 | ppl=31.818 | grad_norm=1.633E+05 | duration=6250.284[0m
+[[36m03-28 14:20:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 101 | ce=2.728 | ppl=26.403 | duration=592.580[0m
+[[36m03-28 14:20:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 1ec9d5bec3aa442bd93f577c26e091d8a8efde8a[0m
+[[36m03-28 14:25:54[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 16:09:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 102 | lr=5.00E-05 | ce=3.048 | ppl=39.135 | grad_norm=1.275E+06 | duration=6205.090[0m
+[[36m03-28 16:16:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 102 | ce=3.025 | ppl=37.624 | duration=423.685[0m
+[[36m03-28 16:16:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 2b8aca9ad1bce3312b418140a066d17de415400e[0m
+[[36m03-28 16:17:06[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 18:00:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 103 | lr=5.00E-05 | ce=3.034 | ppl=38.085 | grad_norm=5.592E+05 | duration=6193.792[0m
+[[36m03-28 18:07:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 103 | ce=2.882 | ppl=31.300 | duration=423.979[0m
+[[36m03-28 18:07:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 23b53169365d38ca4fbb3f869189e06519df02cd[0m
+[[36m03-28 18:13:08[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 19:56:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 104 | lr=5.00E-05 | ce=3.021 | ppl=35.744 | grad_norm=4.049E+05 | duration=6173.274[0m
+[[36m03-28 20:03:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 104 | ce=3.535 | ppl=69.756 | duration=425.040[0m
+[[36m03-28 20:03:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 90995fb3013505df5fb7d8524e7681eb93e11277[0m
+[[36m03-28 20:08:49[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 21:51:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 105 | lr=5.00E-05 | ce=2.972 | ppl=34.957 | grad_norm=8.189E+05 | duration=6184.406[0m
+[[36m03-28 21:58:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 105 | ce=2.888 | ppl=31.725 | duration=425.586[0m
+[[36m03-28 21:59:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 02d05dd409cd6dd75418fe1212090b78c491c347[0m
+[[36m03-28 22:04:44[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-28 23:00:08[0m][[34murllib3.connectionpool[0m][[33mWARNING[0m] - Retrying (Retry(total=237, connect=237, read=240, redirect=240, status=240)) after connection broken by 'NewConnectionError("HTTPSConnection(host='api-clearml.k8s.naint.tech', port=443): Failed to establish a new connection: [Errno 111] Connection refused")': /v2.23/tasks.get_all[0m
+[[36m03-28 23:48:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 106 | lr=5.00E-05 | ce=3.016 | ppl=36.896 | grad_norm=9.894E+05 | duration=6201.386[0m
+[[36m03-28 23:55:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 106 | ce=2.799 | ppl=28.747 | duration=426.505[0m
+[[36m03-28 23:55:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: bfe4ed5dbc42b53ee9f98475990318f244055fd3[0m
+[[36m03-28 23:55:54[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 01:39:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 107 | lr=5.00E-05 | ce=3.180 | ppl=46.645 | grad_norm=1.612E+06 | duration=6191.441[0m
+[[36m03-29 01:46:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 107 | ce=2.968 | ppl=35.795 | duration=426.125[0m
+[[36m03-29 01:46:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: afbab1942a84a88acd348bad5cf365208820fed9[0m
+[[36m03-29 01:51:55[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 03:35:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 108 | lr=5.00E-05 | ce=3.171 | ppl=56.583 | grad_norm=6.562E+06 | duration=6203.869[0m
+[[36m03-29 03:42:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 108 | ce=2.972 | ppl=35.740 | duration=422.890[0m
+[[36m03-29 03:42:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 9f2e2340cd38b390be6ff7c656e78197ad41fe1f[0m
+[[36m03-29 03:48:06[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 05:31:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 109 | lr=5.00E-05 | ce=3.074 | ppl=39.888 | grad_norm=1.418E+07 | duration=6198.256[0m
+[[36m03-29 05:38:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 109 | ce=2.906 | ppl=32.105 | duration=423.811[0m
+[[36m03-29 05:38:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: b31f4d3a468852f426d6d05021d189b9b6dc8b6c[0m
+[[36m03-29 05:44:12[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 07:27:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 110 | lr=5.00E-05 | ce=3.107 | ppl=39.865 | grad_norm=7.486E+06 | duration=6214.916[0m
+[[36m03-29 07:34:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 110 | ce=3.132 | ppl=39.597 | duration=424.382[0m
+[[36m03-29 07:34:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: d2119fac6637e2dfde6c3eab29fa727f6ddd1cf4[0m
+[[36m03-29 07:40:35[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 09:23:56[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 111 | lr=5.00E-05 | ce=3.249 | ppl=46.510 | grad_norm=1.205E+07 | duration=6201.433[0m
+[[36m03-29 09:31:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 111 | ce=2.875 | ppl=31.013 | duration=425.961[0m
+[[36m03-29 09:31:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0078d6ea61120cd6bd2fd6deedf1f8d6c2282607[0m
+[[36m03-29 09:36:46[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 11:20:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 112 | lr=5.00E-05 | ce=3.147 | ppl=42.327 | grad_norm=1.681E+07 | duration=6219.492[0m
+[[36m03-29 11:27:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 112 | ce=2.829 | ppl=29.454 | duration=425.539[0m
+[[36m03-29 11:27:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 4264fd7462e1459a4f8531b7c186724b4bda396b[0m
+[[36m03-29 11:33:15[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 13:16:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 113 | lr=5.00E-05 | ce=3.032 | ppl=35.165 | grad_norm=9.894E+06 | duration=6206.467[0m
+[[36m03-29 13:23:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 113 | ce=2.874 | ppl=30.199 | duration=425.768[0m
+[[36m03-29 13:23:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 5ba339c95459d25f1c53eb852f7afc3748c59b79[0m
+[[36m03-29 13:29:34[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 15:13:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 114 | lr=5.00E-05 | ce=3.188 | ppl=43.414 | grad_norm=3.156E+07 | duration=6209.147[0m
+[[36m03-29 15:20:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 114 | ce=3.334 | ppl=56.035 | duration=423.014[0m
+[[36m03-29 15:20:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: e7d80355f3673affd2af18b77aca55dbae154f4f[0m
+[[36m03-29 15:25:50[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 17:09:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 115 | lr=5.00E-05 | ce=3.356 | ppl=51.909 | grad_norm=1.293E+08 | duration=6218.763[0m
+[[36m03-29 17:16:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 115 | ce=3.137 | ppl=40.431 | duration=423.269[0m
+[[36m03-29 17:16:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 743ac66717d46a9d1db5c77263df14ddbb72da9d[0m
+[[36m03-29 17:22:13[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 19:05:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 116 | lr=5.00E-05 | ce=3.209 | ppl=45.424 | grad_norm=2.280E+07 | duration=6215.446[0m
+[[36m03-29 19:12:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 116 | ce=2.985 | ppl=34.600 | duration=425.652[0m
+[[36m03-29 19:12:56[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: a8a969204f5de504b89f43c8119b296e9b0e22d7[0m
+[[36m03-29 19:18:36[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 21:02:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 117 | lr=5.00E-05 | ce=3.087 | ppl=40.078 | grad_norm=6.361E+07 | duration=6214.989[0m
+[[36m03-29 21:09:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 117 | ce=2.895 | ppl=31.168 | duration=425.012[0m
+[[36m03-29 21:09:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: d2ef5e8c8d711f16ddf5699d738389c0d5fe3e9c[0m
+[[36m03-29 21:14:58[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-29 22:58:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 118 | lr=5.00E-05 | ce=3.001 | ppl=35.840 | grad_norm=1.363E+07 | duration=6223.023[0m
+[[36m03-29 23:05:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 118 | ce=2.899 | ppl=32.737 | duration=424.543[0m
+[[36m03-29 23:05:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: aa0c68c93d81ff9c9ca6ccaf151454b07fddd20c[0m
+[[36m03-29 23:11:27[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 00:55:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 119 | lr=5.00E-05 | ce=3.172 | ppl=45.786 | grad_norm=2.051E+09 | duration=6224.625[0m
+[[36m03-30 01:02:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 119 | ce=3.110 | ppl=41.542 | duration=424.036[0m
+[[36m03-30 01:02:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 67b5367abc0015c30c6988a7bd420083bf714e74[0m
+[[36m03-30 01:07:59[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 02:51:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 120 | lr=5.00E-05 | ce=3.223 | ppl=47.591 | grad_norm=2.387E+10 | duration=6223.862[0m
+[[36m03-30 02:58:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 120 | ce=3.543 | ppl=93.770 | duration=424.689[0m
+[[36m03-30 02:58:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: b8bef5386399d6bd49f7e5dec25082d2a2eb5f36[0m
+[[36m03-30 03:04:33[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 04:48:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 121 | lr=5.00E-05 | ce=3.508 | ppl=139.727 | grad_norm=6.235E+10 | duration=6221.134[0m
+[[36m03-30 04:55:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 121 | ce=3.095 | ppl=38.583 | duration=426.323[0m
+[[36m03-30 04:55:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0a3f0d3018256dc76fb261d771f6271f01f68c54[0m
+[[36m03-30 05:01:04[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 06:44:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 122 | lr=5.00E-05 | ce=3.325 | ppl=54.047 | grad_norm=1.470E+12 | duration=6202.798[0m
+[[36m03-30 06:51:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 122 | ce=3.584 | ppl=91.328 | duration=424.664[0m
+[[36m03-30 06:51:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 45a41d95fcb878acc5baa6010f651db68a89fa98[0m
+[[36m03-30 06:52:14[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 08:35:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 123 | lr=5.00E-05 | ce=3.343 | ppl=63.685 | grad_norm=1.851E+12 | duration=6220.562[0m
+[[36m03-30 08:43:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 123 | ce=3.043 | ppl=37.788 | duration=425.259[0m
+[[36m03-30 08:43:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: b6d8c2566f36e4231566e5ab8e9e4975ae2b2b5b[0m
+[[36m03-30 08:48:44[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 10:32:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 124 | lr=5.00E-05 | ce=3.301 | ppl=50.308 | grad_norm=1.167E+12 | duration=6226.431[0m
+[[36m03-30 10:39:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 124 | ce=3.158 | ppl=41.888 | duration=425.147[0m
+[[36m03-30 10:39:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: cd0e0cf5b4345413873fc4f7eceedf2bdba08ead[0m
+[[36m03-30 10:40:18[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 12:23:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 125 | lr=5.00E-05 | ce=3.883 | ppl=134.792 | grad_norm=6.081E+12 | duration=6213.399[0m
+[[36m03-30 12:30:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 125 | ce=3.845 | ppl=97.546 | duration=427.563[0m
+[[36m03-30 12:31:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 30c05d6785feffa016fec1a082c7fb13be7cb66f[0m
+[[36m03-30 12:31:40[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 14:15:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 126 | lr=5.00E-05 | ce=3.678 | ppl=80.625 | grad_norm=9.753E+12 | duration=6216.783[0m
+[[36m03-30 14:22:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 126 | ce=3.387 | ppl=52.166 | duration=423.702[0m
+[[36m03-30 14:22:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: f43a958b26e58fed0f7f2190a79c4d89ca890cda[0m
+[[36m03-30 14:28:02[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 16:11:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 127 | lr=5.00E-05 | ce=3.760 | ppl=109.884 | grad_norm=8.886E+12 | duration=6219.973[0m
+[[36m03-30 16:18:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 127 | ce=3.517 | ppl=58.222 | duration=422.297[0m
+[[36m03-30 16:18:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 3f3a55e451cee7143d0e63a05b8d8979009ca7c2[0m
+[[36m03-30 16:24:26[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 18:08:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 128 | lr=5.00E-05 | ce=3.491 | ppl=61.110 | grad_norm=1.911E+13 | duration=6214.443[0m
+[[36m03-30 18:15:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 128 | ce=3.155 | ppl=41.556 | duration=425.915[0m
+[[36m03-30 18:15:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: e3744bb640ebaf469661b27662f52f39e7677a8b[0m
+[[36m03-30 18:20:49[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 20:04:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 129 | lr=5.00E-05 | ce=3.333 | ppl=51.215 | grad_norm=3.813E+14 | duration=6209.594[0m
+[[36m03-30 20:11:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 129 | ce=3.260 | ppl=44.896 | duration=424.232[0m
+[[36m03-30 20:11:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0fe62dd4ff1f762308a44c7f4a6fc0e39868b9ab[0m
+[[36m03-30 20:12:05[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 21:55:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 130 | lr=5.00E-05 | ce=3.409 | ppl=55.000 | grad_norm=2.139E+14 | duration=6215.039[0m
+[[36m03-30 22:02:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 130 | ce=3.374 | ppl=53.831 | duration=424.858[0m
+[[36m03-30 22:02:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 1a1116f60ae3d79eef718ee3e7ad51a724b28110[0m
+[[36m03-30 22:08:27[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-30 23:52:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 131 | lr=5.00E-05 | ce=3.451 | ppl=60.653 | grad_norm=3.437E+14 | duration=6225.758[0m
+[[36m03-30 23:59:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 131 | ce=3.354 | ppl=52.439 | duration=423.451[0m
+[[36m03-30 23:59:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 31124e381fdb4556cf8cbed18d5c07318663ac70[0m
+[[36m03-31 00:04:57[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-31 01:48:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 132 | lr=5.00E-05 | ce=3.430 | ppl=57.412 | grad_norm=9.528E+14 | duration=6213.446[0m
+[[36m03-31 01:55:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 132 | ce=3.290 | ppl=49.044 | duration=424.217[0m
+[[36m03-31 01:55:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 03f74ee85eb05e5028f3e175be487dbb1aace979[0m
+[[36m03-31 02:01:15[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-31 03:45:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 133 | lr=5.00E-05 | ce=3.390 | ppl=57.088 | grad_norm=INF | duration=6227.135[0m
+[[36m03-31 03:52:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 133 | ce=3.179 | ppl=45.914 | duration=423.693[0m
+[[36m03-31 03:52:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 9e41b9054b02e9e500137a355f1f17a5dca2e83f[0m
+[[36m03-31 03:57:48[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-31 05:41:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 134 | lr=5.00E-05 | ce=3.352 | ppl=54.109 | grad_norm=INF | duration=6240.082[0m
+[[36m03-31 05:48:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 134 | ce=3.229 | ppl=47.132 | duration=425.604[0m
+[[36m03-31 05:48:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: e0f152008bf22f1a0ce531bbeaf0eebc40d0fb75[0m
+[[36m03-31 05:54:37[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
+[[36m03-31 07:38:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 135 | lr=5.00E-05 | ce=3.392 | ppl=57.098 | grad_norm=INF | duration=6237.040[0m
+[[36m03-31 07:45:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 135 | ce=3.193 | ppl=44.617 | duration=424.873[0m
+[[36m03-31 07:45:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 53de07fa175483d55f1f47f77691536bda053004[0m
+[[36m03-31 07:51:24[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to /mnt/d2/data_sda/nfs/alosev/AI_Synthesizer/XPS_MusicGen/xps/c15a809d/checkpoint.th.1[0m
